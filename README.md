@@ -159,7 +159,7 @@ we'll see an issue:
 ```jsx
 function DogPics() {
   const [images, setImages] = useState([]);
-
+// https://dog.ceo/api/breeds/image/random
   useEffect(() => {
     fetch("https://dog.ceo/api/breeds/image/random/3")
       .then((r) => r.json())
